@@ -8,17 +8,18 @@ class A{
     }
 };
 
-class B : public A{
-    public:
-    void display() override{
-        cout << "I am derived class" << "\n";
-    }
-};
+// class B : public A{
+//     public:
+//     void display() override{
+//         cout << "I am derived class" << "\n";
+//     }
+// };
 int main()
 {
-    A *ptr;
-    B obj;
-    ptr = &obj;
-    ptr -> display();
+    // A *ptr;
+    // B obj;
+    // ptr = &obj;
+    // ptr -> display();
+    cout << sizeof(A) << endl;
 
 }

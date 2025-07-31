@@ -4,12 +4,11 @@ class graph
 {
 public:
     unordered_map<int, list<int>> adj;
-
+    
     void addEdge(int u, int v, bool direction)
     {
         // direction = 0 -> undirected
         // direction = 1 -> directed
-
         adj[u].push_back(v);
         if (direction == 0)
         {
@@ -40,6 +39,7 @@ void prepare_Adj_Lst(unordered_map<int, list<int> > &adjList, vector<vector<int>
         adjList[u].push_back(v);
         adjList[v].push_back(u);
     }
+    
 }
 
 void bfsTraversal(unordered_map<int, list<int> > &adjList, unordered_map<int, bool> &visited, vector<int> &ans, int node)
